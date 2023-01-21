@@ -25,6 +25,13 @@ jobs:
         echo "iniciando sesión"
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         echo "Fin del login"
+    - name: Build Docker image
+      run: |
+        docker build -t andrey2020/docker-graphsql:0.0.2 .
+        
+    - name: Push Docker image
+      run: |
+        docker push andrey2020/docker-graphsql:0.0.2 .
         
         
         
