@@ -31,7 +31,7 @@ jobs:
         
     - name: Push Docker image
       run: |
-        docker push andrey2020/docker-graphsql:0.0.2 .
+        docker push andrey2020/docker-graphsql:0.0.2
         
         
         
